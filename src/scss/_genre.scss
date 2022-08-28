@@ -1,0 +1,37 @@
+.genres {
+   margin-top: 96px;
+   color: $text-primary-color;
+   h1 {
+      text-align: center;
+   }
+
+   .genre {
+      margin-top: 60px;
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      row-gap: 30px;
+      &__card {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         width: 220px;
+         height: 220px;
+         border: 2px solid rgba(255, 255, 255, 0.7);
+         border-radius: 10px;
+         vertical-align: middle;
+         
+      }
+      &__info {
+         display: flex;
+         position: relative;
+         flex-direction: column;
+         align-items: center;
+      }
+      &__name {
+         font-size: 26px;
+         text-transform: uppercase;
+         margin-top: 38px;
+         font-weight: 600;
+      }
+   }
+}
